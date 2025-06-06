@@ -29,7 +29,7 @@ router.post("/send-otp", async (req, res) => {
 
       if (existingData.userType !== userType) {
         return res.status(400).json({
-          message: `This email is already registered as a '${existingData.userType}'. You can't use it as '${userType}'.`,
+          message: `This email is already registered as a '${existingData.userType}'. You can't use it as '${existingData.userType}'.`,
         });
       }
     }
